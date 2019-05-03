@@ -1,0 +1,47 @@
+.navlink-text {
+  color: white !important;
+  font-size: 0.9em;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: black;
+    transition: 0.5s;
+  }
+}
+
+.navlink-text-light {
+  background-color: #007bff;
+  justify-self: flex-end;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .navlink-text {
+    font-size: 0.8em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navlink-text {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navlink-text-light {
+    min-width: 100%;
+  }
+
+  .navlink-text {
+    min-width: 100%;
+  }
+}

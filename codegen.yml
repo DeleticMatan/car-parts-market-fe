@@ -1,0 +1,11 @@
+overwrite: true
+schema: 'https://auto-delovi.herokuapp.com'
+documents: 'graphql/**/*.ts'
+generates:
+  generated/apolloComponents.tsx:
+    config:
+      noNamespaces: true
+    plugins:
+      - 'typescript-common'
+      - 'typescript-client'
+      - 'typescript-react-apollo'
